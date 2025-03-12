@@ -19,7 +19,7 @@ public abstract class Person {
         this.fullName = fullName;
         this.address = address;
         this.phone = phone;
-        if (email.matches("@")) {
+        if (email.contains("@")) {
             throw new RuntimeException("Invalid email format.");
         }
         this.email = email;
