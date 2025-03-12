@@ -12,15 +12,24 @@ public abstract class Person {
     private final LocalDate dateOfBirth;
 
     protected Person(int id, String fullName, String address, String phone, String email, LocalDate dateOfBirth) {
+        if (id < 0){
+            throw new RuntimeException("ID must not be negative.");
+        }
         this.id = id;
         this.fullName = fullName;
         this.address = address;
         this.phone = phone;
+        if (email.matches("@")) {
+            throw new RuntimeException("Invalid email format.");
+        }
         this.email = email;
         this.dateOfBirth = dateOfBirth;
     }
 
     protected Person(int id, String fullName, LocalDate dateOfBirth) {
+        if (id < 0){
+            throw new RuntimeException("ID must not be negative.");
+        }
         this.id = id;
         this.fullName = fullName;
         this.dateOfBirth = dateOfBirth;

@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import model.person.Student;
 
 public class Professor extends Staff {
     private List<String> coursesTaught;
@@ -54,7 +55,6 @@ public class Professor extends Staff {
         }
     }
 
-    @Override
     public String toString() {
         return super.toString() + "\nCourses Taught: " + coursesTaught;
     }

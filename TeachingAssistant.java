@@ -6,4 +6,26 @@
 
 class TeachingAssistant {
 
+    void assignToCourse(String course) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void assignToCourse(String course) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'assignToCourse'");
+    }
+
+    void assignToCourse(String course) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    String getFullName() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public String getFullName() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getFullName'");
+    }
+
 }
